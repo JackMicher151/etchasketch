@@ -19,7 +19,7 @@ gobutton.addEventListener('click', () => {
                 celldiv.style.backgroundColor = '#EA0';
             })
             celldiv.addEventListener('mouseenter', (e) => {
-                if (e.buttons === 0) {
+                if (e.buttons === 1) {
                     celldiv.style.backgroundColor = '#EA0';
                 }
             })
