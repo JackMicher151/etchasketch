@@ -15,6 +15,14 @@ gobutton.addEventListener('click', () => {
         for (let h = 0; h < sizer; h++) {
             let celldiv = document.createElement('div');
             celldiv.classList.add('cell');
+            celldiv.addEventListener('mousedown', () => {
+                celldiv.style.backgroundColor = '#EA0';
+            })
+            celldiv.addEventListener('mouseenter', (e) => {
+                if (e.buttons === 0) {
+                    celldiv.style.backgroundColor = '#EA0';
+                }
+            })
             rowdiv.append(celldiv);
         }
         mcontainer.append(rowdiv);
