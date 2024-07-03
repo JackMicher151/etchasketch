@@ -5,7 +5,7 @@ const mcontainer = document.getElementById('maincontainer');
 gobutton.addEventListener('click', () => {
     mcontainer.innerHTML = "";
     let sizer = gridsizeelem.value;
-    if (isNaN(sizer)) {
+    if (isNaN(sizer) || sizer < 1 || sizer > 100) {
         console.log('bneis');
         return;
     }
@@ -20,7 +20,7 @@ gobutton.addEventListener('click', () => {
             })
             celldiv.addEventListener('mouseenter', (e) => {
                 if (e.buttons === 1) {
-                    celldiv.style.backgroundColor = '#EA0';
+                    celldiv.style.backgroundColor = '#EA0';                    
                 }
             })
             rowdiv.append(celldiv);
