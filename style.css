@@ -9,6 +9,11 @@
     min-width: 960px;
     max-width: 960px;
     height: 960px;
+    margin-top: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0);
+    transition: border-color 1.5s;
 }
 
 #maincontainer, #maincontainer > .row {
