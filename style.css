@@ -9,10 +9,10 @@ button, label {
 #maincontainer {
     display: flex;
     flex-direction: column;
-    width: 960px;
-    min-width: 960px;
-    max-width: 960px;
-    height: 960px;
+    width: 720px;
+    min-width: 720px;
+    max-width: 720px;
+    height: 720px;
     margin-top: 10px;
     border-width: 3px;
     border-style: solid;

@@ -26,7 +26,7 @@ goButton.addEventListener('click', () => {
                 if(rainCheck.checked) {
                     celldiv.style.backgroundColor = randomColorString();
                 } else {
-                celldiv.style.backgroundColor = selectColor;
+                    celldiv.style.backgroundColor = selectColor;
                 }
             })
             celldiv.addEventListener('mouseenter', (e) => {
